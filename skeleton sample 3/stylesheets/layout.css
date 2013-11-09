@@ -1,0 +1,397 @@
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*/
+
+/* Table of Content
+==================================================
+	#Site Styles
+	#Page Styles
+	#Media Queries
+	#Font-Face */
+
+/* #Site Styles
+================================================== */
+
+/* #Page Styles
+================================================== */
+
+
+body {
+    padding-top: 10px;
+	background:url('../images/background.jpg') #fefefe;
+position:relative;
+z-index: 0;
+}
+ 
+#logo{
+
+
+} 
+.container
+ {z-index: 1;}
+#left_parag {
+  
+}
+ 
+#rightphoto img{ 
+    max-width: 100%;
+    height: auto;
+    -webkit-border-radius: 200px;
+    -moz-border-radius: 200px;
+    border-radius: 300px;
+}
+
+
+
+
+.add-top { margin-top: 20px !important; }
+
+
+
+
+#colorNav > ul{
+	
+	margin:0 auto;
+	float: left;
+	
+}
+
+#colorNav > ul > li{ /* will style only the top level li */
+	list-style: none;
+	box-shadow: 0 0 10px rgba(100, 100, 100, 0.2) inset,1px 1px 1px #CCC;
+	display: inline-block;
+	line-height: 1;
+	margin: 1px;
+	border-radius: 3px;
+	position:relative;
+}
+
+#colorNav > ul > li > a{
+	color:inherit;
+	text-decoration:none !important;
+	font-size:24px;
+	padding: 25px;
+}
+
+#colorNav li ul{
+	position:absolute;
+	list-style:none;
+	text-align:center;
+	width:180px;
+	left:50%;
+	margin-left:-90px;
+	top:70px;
+	font:bold 12px 'Open Sans Condensed', sans-serif;
+	
+	/* This is important for the show/hide CSS animation */
+	max-height:0px;
+	overflow:hidden;
+	
+	-webkit-transition:max-height 0.4s linear;
+	-moz-transition:max-height 0.4s linear;
+	transition:max-height 0.4s linear;
+}
+
+#colorNav li ul li{
+	background-color:#313131;
+}
+
+#colorNav li ul li a{
+	padding:12px;
+	color:#fff !important;
+	text-decoration:none !important;
+	display:block;
+}
+
+#colorNav li ul li:nth-child(odd){ /* zebra stripes */
+	background-color:#363636;
+}
+
+#colorNav li ul li:hover{
+	background-color:#444;
+}
+
+#colorNav li ul li:first-child{
+	border-radius:3px 3px 0 0;
+	margin-top:25px;
+	position:relative;
+}
+
+#colorNav li ul li:first-child:before{ /* the pointer tip */
+	content:'';
+	position:absolute;
+	width:1px;
+	height:1px;
+	border:5px solid transparent;
+	border-bottom-color:#313131;
+	left:50%;
+	top:-10px;
+	margin-left:-5px;
+}
+
+#colorNav li ul li:last-child{
+	border-bottom-left-radius:3px;
+	border-bottom-right-radius:3px;
+}
+
+/* This will trigger the CSS */
+/* transition animation on hover */
+
+#colorNav li:hover ul{
+	max-height:200px; /* Increase when adding more dropdown items */
+}
+
+
+/*----------------------------
+	Color Themes
+-----------------------------*/
+
+
+#colorNav li.green{
+	/* This is the color of the menu item */
+	background-color:#00c08b;
+	
+	/* This is the color of the icon */
+	color:#127a5d;
+}
+
+#colorNav li.red{		background-color:#ea5080;color:#FFF7DE;}
+#colorNav li.blue{		background-color:#53bfe2;color:#FFF7DE;}
+#colorNav li.yellow{	background-color:#669AB8;color:#EFC94C;}
+#colorNav li.purple{	background-color:#df6dc2;color:#244659;}
+
+
+
+footer{
+	height: 200px;
+	width: 98%;
+	color:#ccc;
+	font-size:12px;
+    margin:0 auto;
+	position:relative;
+	z-index:-2;
+	background-color:#31353a;
+	background-image:-webkit-linear-gradient(top, #31353a, #2f3337);
+	background-image:-moz-linear-gradient(top, #31353a, #2f3337);
+	background-image:linear-gradient(top, #31353a, #2f3337);
+}
+
+/* Set a width to the outermost UL and center it */
+
+footer > ul{
+	width:80%;
+	position:relative;
+	margin: 0 auto;
+	bottom:0;	
+	padding-top: 2em;
+	padding-bottom: 1em;
+	z-index:-1;
+}
+
+/* The four columns of links */
+
+footer > ul > li{
+	width:25%;
+	float:left;
+}
+
+footer ul{
+	list-style: none;
+}
+
+/* The links */
+
+footer > ul > li ul li{
+	margin:0 auto ;
+	text-transform: uppercase;
+	font-weight:bold;
+	line-height:1.8;
+}
+
+footer > ul > li ul li a{
+	text-decoration: none !important;
+	color:#7d8691 !important;
+}
+
+footer > ul > li ul li a:hover{
+	color:#ddd !important;
+}
+
+/* The company logo */
+
+footer a.logo{
+	color: #e4e4e4 !important;
+	text-decoration: none !important;
+	font-size: 14px;
+	font-weight: bold;
+	position: relative;
+	text-transform: uppercase;
+	margin-left: 16px;
+	display: inline-block;
+	margin-top: 7px;
+}
+
+footer a.logo i{
+	font-style: normal;
+	position: absolute;
+	width: 60px;
+	display: block;
+	left: 48px;
+	top: 18px;
+	font-size: 12px;
+	color: #999;
+}
+
+footer a.logo:before{
+	content: '';
+	display: inline-block;
+	background: url('../images/sprite.png') no-repeat -19px -70px;
+	width: 48px;
+	height: 37px;
+	vertical-align: text-top;
+}
+
+/* Common styles for the four color bars */
+
+footer p{
+	width: 80%;
+	margin-right: 10%;
+	padding: 9px 0;
+	line-height: 18px;
+	background-color: #058cc7;
+	font-weight: bold;
+	font-size: 14px/1.2em;
+	color:#fff;
+	text-transform: uppercase;
+	text-shadow: 0 1px rgba(0,0,0,0.1);
+	box-shadow: 0 0 3px rgba(0,0,0,0.3);
+	margin-bottom: 20px;
+	opacity:0.9;
+	cursor:default;
+
+	-webkit-transition: opacity 0.4s;
+	-moz-transition: opacity 0.4s;
+	transition: opacity 0.4s;
+}
+
+footer > ul > li:hover p{
+	opacity:1;
+}
+
+footer p:before{
+	content: '';
+	display: inline-block;
+	background: url('../images/sprite.png') no-repeat;
+	width: 16px;
+	height: 18px;
+	margin: 0 12px 0 15px;
+	vertical-align: text-bottom;
+}
+
+
+/*-------------------------
+	The different colors
+--------------------------*/
+
+
+footer p.home{
+	background-color: #00c08b;
+
+	background-image:-webkit-linear-gradient(top, #00c08b, #00c08b);
+	background-image:-moz-linear-gradient(top, #0096d6, #008ac6);
+	background-image:linear-gradient(top, #0096d6, #008ac6);
+}
+
+footer p.home:before{
+	background-position: 0 -110px;
+}
+
+footer p.services{
+	background-color: #ea5080;
+
+	background-image:-webkit-linear-gradient(top, #ea5080, #ea5080);
+	background-image:-moz-linear-gradient(top, #ea5080, #ea5080);
+	background-image:linear-gradient(top, #ea5080, #ea5080);
+}
+
+footer p.services:before{
+	background-position: 0 -129px;
+}
+
+footer p.reachus{
+	background-color: #53bfe2;
+
+	background-image:-webkit-linear-gradient(top, #53bfe2, #53bfe2);
+	background-image:-moz-linear-gradient(top, #53bfe2, #c75496);
+	background-image:linear-gradient(top, #53bfe2, #c75496);
+}
+
+footer p.reachus:before{
+	background-position: 0 -89px;
+}
+
+footer p.clients{
+	background-color: #df6dc2;
+
+	background-image:-webkit-linear-gradient(top, #df6dc2, #df6dc2);
+	background-image:-moz-linear-gradient(top, #df6dc2, #df6dc2);
+	background-image:linear-gradient(top, #df6dc2, #df6dc2);
+}
+
+footer p.clients:before{
+	background-position: 0 -69px;
+}
+
+/* #Media Queries
+================================================== */
+
+	/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) {}
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {}
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {}
+/* iPad Portrait/Browser */
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+        #theText {
+            margin-top: 20px;
+        }
+    }
+     
+    /* Mobile/Browser */
+    @media only screen and (max-width: 767px) {
+        #theText {
+            margin-top: 10px;
+        }
+    }
+
+/* #Font-Face
+================================================== */
+/* 	This is the proper syntax for an @font-face file
+		Just create a "fonts" folder at the root,
+		copy your FontName into code below and remove
+		comment brackets */
+
+/*	@font-face {
+	    font-family: 'FontName';
+	    src: url('../fonts/FontName.eot');
+	    src: url('../fonts/FontName.eot?iefix') format('eot'),
+	         url('../fonts/FontName.woff') format('woff'),
+	         url('../fonts/FontName.ttf') format('truetype'),
+	         url('../fonts/FontName.svg#webfontZam02nTh') format('svg');
+	    font-weight: normal;
+	    font-style: normal; }
+*/
